@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .section-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .item-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .item-time {
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        .item-subtitle {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+        
+        .item-description {
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        ul {
+            margin-left: 20px;
+            color: #555;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>王浩</h1>
+            <p>全栈开发工程师</p>
+            <div class="contact-info">
+                <span>📧 wanghao@example.com</span>
+                <span>📱 +86 138 1234 5678</span>
+                <span>📍 北京市朝阳区</span>
+                <span>🔗 github.com/yh-zero</span>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- 个人简介 -->
+            <div class="section">
+                <div class="section-title">个人简介</div>
+                <div class="section-item">
+                    <p class="item-description">
+                        拥有5年以上Web全栈开发经验，熟练掌握前后端开发技术。对代码质量和用户体验有执着追求，
+                        具有良好的团队合作精神和项目管理能力。专注于构建高性能、可扩展的Web应用系统。
+                    </p>
+                </div>
+            </div>
+            
+            <!-- 工作经历 -->
+            <div class="section">
+                <div class="section-title">工作经历</div>
+                
+                <div class="section-item">
+                    <div class="item-header">
+                        <div class="item-title">高级Web开发工程师</div>
+                        <span class="item-time">2022.08 - 至今</span>
+                    </div>
+                    <div class="item-subtitle">科技有限公司 • 研发部</div>
+                    <div class="item-description">
+                        <ul>
+                            <li>负责公司核心业务系统的前后端开发与维护</li>
+                            <li>设计和实现了微服务架构，提升系统性能30%</li>
+                            <li>带领3人团队完成了重大系统升级，保证零停机部署</li>
+                            <li>优化数据库查询性能，降低服务器成本20%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section-item">
+                    <div class="item-header">
+                        <div class="item-title">Web开发工程师</div>
+                        <span class="item-time">2020.06 - 2022.07</span>
+                    </div>
+                    <div class="item-subtitle">互联网公司 • 产品技术部</div>
+                    <div class="item-description">
+                        <ul>
+                            <li>开发公司主要产品的前端模块，日均用户10万+</li>
+                            <li>参与后端API设计与实现，确保接口性能稳定</li>
+                            <li>推动前端工程化建设，建立完整的开发规范</li>
+                            <li>参与Code Review，提升团队代码质量</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 技能专长 -->
+            <div class="section">
+                <div class="section-title">技能专长</div>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>前端技术</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>后端技术</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>工程化工具</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 教育背景 -->
+            <div class="section">
+                <div class="section-title">教育背景</div>
+                
+                <div class="section-item">
+                    <div class="item-header">
+                        <div class="item-title">计算机科学与技术</div>
+                        <span class="item-time">2016 - 2020</span>
+                    </div>
+                    <div class="item-subtitle">北京理工大学 • 学士学位</div>
+                    <div class="item-description">
+                        GPA: 3.8/4.0 | 获得校级优秀毕业生荣誉
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 项目经验 -->
+            <div class="section">
+                <div class="section-title">项目经验</div>
+                
+                <div class="section-item">
+                    <div class="item-header">
+                        <div class="item-title">企业级内容管理系统</div>
+                        <span class="item-time">2023.01 - 2023.08</span>
+                    </div>
+                    <div class="item-description">
+                        <ul>
+                            <li>技术栈：React + Node.js + MongoDB</li>
+                            <li>担任主要开发者，完成系统核心功能开发</li>
+                            <li>实现权限管理、工作流、审批等复杂业务逻辑</li>
+                            <li>系统上线后日均处理10000+条内容</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section-item">
+                    <div class="item-header">
+                        <div class="item-title">实时数据可视化平台</div>
+                        <span class="item-time">2022.09 - 2022.12</span>
+                    </div>
+                    <div class="item-description">
+                        <ul>
+                            <li>技术栈：Vue.js + Python + MySQL + Redis</li>
+                            <li>实现WebSocket实时数据推送，支持1000+并发连接</li>
+                            <li>优化前端渲染性能，支持百万级数据点展示</li>
+                            <li>获得客户高度评价</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 证书与荣誉 -->
+            <div class="section">
+                <div class="section-title">证书与荣誉</div>
+                <div class="section-item">
+                    <ul>
+                        <li>2022年获得公司"技术创新奖"</li>
+                        <li>2021年获得公司"优秀员工"荣誉</li>
+                        <li>阿里云认证开发工程师</li>
+                        <li>华为云认证工程师</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 王浩 | 最后更新时间: 2026年1月</p>
+        </div>
+    </div>
+</body>
+</html>
